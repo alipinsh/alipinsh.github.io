@@ -1,0 +1,147 @@
+body {
+	background-color: black;
+	color: white;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-image: url("../img/stars.png");
+}
+
+a:link, a:visited {
+  color: lime;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: lime;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+h4 {
+	margin: 1em 0;
+}
+
+.main {
+	background-color: black;
+	width: 800px;
+	margin: 0 auto;
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+.header {
+	border-bottom: 1px solid white;
+	width: 800px;
+	height: 100px;
+}
+
+.menu {
+	border-bottom: 1px solid white;
+	width: 800px;
+	display: table;
+	margin: 0 auto;
+}
+
+.menu-links {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.menu-links li {
+	display: inline;
+	text-align: center;
+}
+
+.menu-links a {
+	display: inline-block;
+	width: 150px;
+}
+
+.content {
+	padding: 8px;
+}
+
+.comic-list {
+	
+	
+}
+
+.comic-list .item {
+	overflow: hidden;
+}
+
+.item .cover {
+	float:left;
+}
+
+.item .info {
+	margin-left: 5px;
+	float:left;
+}
+
+.info .title {
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+.info .status {
+	font-size: 10pt;
+}
+
+.ongoing {
+	color: yellow;
+}
+
+.finished {
+	color: green;
+}
+
+.info .desc {
+	
+}
+
+.info .links {
+	
+}
+
+.info .chapters {
+	display: none;
+}
+
+.chapters ul {
+	margin: 8px 0;
+}
+
+.links .shower {
+	display: block;
+}
+
+.links .hider {
+	display: none;
+}
+
+.post {
+	
+}
+
+.post .title {
+	font-size: 20pt;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.post .date {
+	font-size: 10pt;
+	margin-bottom: 8px;
+}
+
+.post .text {
+	
+}
+
+
+

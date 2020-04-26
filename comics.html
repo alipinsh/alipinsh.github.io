@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>[eye128] комиксы</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/list.js"></script>
+</head>
+<body>
+<div class="main">
+	<div class="header">
+		<img src="img/header1.png">
+	</div>
+	<div class="menu">
+		<ul class="menu-links">
+			<li><a href="index.html">главная</a></li>
+			<li><a href="blog.html">блог</a></li>
+			<li><a href="comics.html">комиксы</a></li>
+			<li><a href="music.html">музыка</a></li>
+			<li><a href="about.html">обо мне</a></li>
+		</ul>
+	</div>
+	<div class="content">
+		<p>
+			Здесь список моих комиксов.<br>
+			Пока здесь только одна история, которая ещё рисуется, но потом будут ещё.
+		</p>
+		<div class="comic-list">
+			<div class="item">
+				<div class="cover">
+					<img src="img/comics/1/cover.png">
+				</div>
+				<div class="info">
+					<div class="title">Лес</div>
+					<div class="desc">История о кусте, траве и шторме.</div>
+					<!-- <div class="status ongoing">В онгоинге</div> -->
+					<div class="links">
+						<a href="reader.html?s=1&c=1&p=1">Читать с начала</a><br>
+						<a class="shower" id="show1" onclick="show(1)" href="javascript:void(0);">Показать список глав</a>
+						<a class="hider" id="hide1" onclick="hide(1)" href="javascript:void(0);">Спрятать список глав</a>
+						<div class="chapters" id="1">
+							<ul>
+								<!-- <li><a href="reader.html?s=1&c=3&p=1">Глава 3 - Внизу и наверху</a></li> -->
+								<li><a href="reader.html?s=1&c=2&p=1">Глава 2 - Неприглашённые гости</a></li>
+								<li><a href="reader.html?s=1&c=1&p=1">Глава 1 - Неспокойное дерево</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
