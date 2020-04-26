@@ -78,6 +78,10 @@ window.onload = function() {
 	}
 };
 
+window.addEventListener("popstate", function (e) {
+	window.open("comics.html", "_self");
+});
+
 function turnChapter(direction) {
 	chapter += direction;
 	
