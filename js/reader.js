@@ -86,7 +86,11 @@ function turnChapter(direction) {
 	chapter += direction;
 	
 	if (chapter > 0 && chapter <= pages[comic-1].length) {
-		page = 1;
+		if (direction > 0) {
+			page = 1;
+		} else {
+			page = pages[comic-1][chapter-1];
+		}
 		history.pushState("", `Comic ${comic}, Chapter ${chapter}, Page ${page}`, `reader.html?s=${comic}&c=${chapter}&p=${page}`);
 		window.scroll(0, 0);
 		while (imgContainer.firstChild) {
