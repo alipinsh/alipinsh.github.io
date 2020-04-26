@@ -48,7 +48,7 @@ function firstLoadContent() {
 	for (let i = 1; i <= pages[comic-1][chapter-1]; ++i) {
 		let imgElement = document.createElement("img");
 		imgElement.setAttribute("class", "comicPage");
-		imgElement.setAttribute("data-src", `/img/comics/${comic}/${chapter}/${i}.png`);
+		imgElement.setAttribute("data-src", `img/comics/${comic}/${chapter}/${i}.png`);
 		imgElement.style.display = 'none';
 		imgContainer.appendChild(imgElement);
 	}
@@ -74,7 +74,7 @@ window.onload = function() {
 	if (checkParams()) {
 		firstLoadContent();
 	} else {
-		window.open("/comics.html", "_self");
+		window.open("comics.html", "_self");
 	}
 };
 
@@ -83,14 +83,14 @@ function turnChapter(direction) {
 	
 	if (chapter > 0 && chapter <= pages[comic-1].length) {
 		page = 1;
-		history.pushState("", `Comic ${comic}, Chapter ${chapter}, Page ${page}`, `/reader.html?s=${comic}&c=${chapter}&p=${page}`);
+		history.pushState("", `Comic ${comic}, Chapter ${chapter}, Page ${page}`, `reader.html?s=${comic}&c=${chapter}&p=${page}`);
 		window.scroll(0, 0);
 		while (imgContainer.firstChild) {
 			imgContainer.removeChild(imgContainer.lastChild);
 		}
 		firstLoadContent();
 	} else {
-		window.open("/comics.html", "_self")
+		window.open("comics.html", "_self")
 	}
 	
 }
@@ -103,7 +103,7 @@ function turnPage(direction) {
 	} else if (page > pages[comic-1][chapter-1]){
 		turnChapter(1);
 	} else {
-		history.pushState("", `Comic ${comic}, Chapter ${chapter}, Page ${page}`, `/reader.html?s=${comic}&c=${chapter}&p=${page}`);
+		history.pushState("", `Comic ${comic}, Chapter ${chapter}, Page ${page}`, `reader.html?s=${comic}&c=${chapter}&p=${page}`);
 		window.scroll(0, 0);
 		if (direction > 0) {
 			changeContent(direction);
