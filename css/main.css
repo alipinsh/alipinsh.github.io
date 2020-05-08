@@ -86,6 +86,7 @@ h4 {
 .info .title {
 	font-size: 20pt;
 	font-weight: bold;
+	padding-bottom: 1em;
 }
 
 .info .status {
@@ -101,7 +102,12 @@ h4 {
 }
 
 .info .desc {
-	
+	padding-bottom: 1em;
+}
+
+.info .pubdate {
+	padding-bottom: 1em;
+	font-style: italic;
 }
 
 .info .links {
