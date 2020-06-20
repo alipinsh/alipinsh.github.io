@@ -1,3 +1,4 @@
+
 let pages = [
 	[34, 32, 32, 32]
 ];
@@ -11,7 +12,7 @@ let firstLoad = 5;
 
 function changeContent(direction) {
 	imgContainer.children[page-1-direction].style.display = "none";
-	imgContainer.children[page-1].style.display = "inline"
+	imgContainer.children[page-1].style.display = "inline";
 }
 
 function getCurrentParams() {
@@ -22,7 +23,7 @@ function getCurrentParams() {
 }
 
 function loadPage(p) {
-	pageElement = imgContainer.children[p-1];
+	let pageElement = imgContainer.children[p-1];
 	if (pageElement.getAttribute("data-src")) {
 		pageElement.setAttribute("src", pageElement.getAttribute("data-src"));
 		pageElement.removeAttribute("data-src");
@@ -98,7 +99,7 @@ function turnChapter(direction) {
 		}
 		firstLoadContent();
 	} else {
-		window.open("comics.html", "_self")
+		window.open("comics.html", "_self");
 	}
 	
 }
