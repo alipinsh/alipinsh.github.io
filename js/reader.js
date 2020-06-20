@@ -1,3 +1,4 @@
+"use strict";
 
 let pages = [
 	[34, 32, 32, 32]
