@@ -28,5 +28,6 @@ body, html {
 	text-align: center;
 }
 .buttonsContainer button {
+	display: inline-block;
 	width: 15%;
 }
