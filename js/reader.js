@@ -1,7 +1,7 @@
 "use strict";
 
 let pages = [
-	[34, 32, 32, 32]
+	[34, 32, 32, 32, 32]
 ];
 
 let comic = 0;
