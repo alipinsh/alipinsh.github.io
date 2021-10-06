@@ -2,71 +2,83 @@
 <html>
 <head>
 	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>[eye128] комиксы</title>
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
-	<script src="js/list.js"></script>
 </head>
 <body>
-<div class="main">
-	<div class="header">
-		<img src="img/header1.png">
-	</div>
-	<div class="menu">
-		<ul class="menu-links">
-			<li><a href="index.html">главная</a></li>
-			<li><a href="blog.html">блог</a></li>
-			<li><a href="comics.html">комиксы</a></li>
-			<li><a href="music.html">музыка</a></li>
-			<li><a href="about.html">обо мне</a></li>
-		</ul>
-	</div>
-	<div class="content">
-		<p>
-			Здесь список моих комиксов.<br>
-			Пока здесь только одна история, которая ещё рисуется, но потом будут ещё.<br>
-		</p>
-		<p>
-			О читалке:<br>
-			<!-- <strong>&lt;&lt;</strong> предыдущая глава<br> -->
-			<strong>&lt;</strong> предыдущая страница<br>
-			<strong>o</strong> вернуться сюда<br>
-			<strong>&gt;</strong> следующая страница<br>
-			<!-- <strong>&gt;&gt;</strong> следующая глава<br> -->
-		</p>
-		<p>
-			<a type="application/rss+xml" href="comicsfeed.xml"><img src="img/feed-icon-14x14.png"> RSS-фид комиксов</a>
-		</p>
-		<div class="comic-list">
-			<div class="item">
-				<div class="cover">
-					<img src="img/comics/1/cover.png">
-				</div>
-				<div class="info">
-					<div class="title">Лес</div>
-					<div class="desc">История о кусте, траве и шторме.</div>
-					<div class="pubdate">Последнее обновление: 23.11.2020</div>
-					<!-- <div class="status ongoing">В онгоинге</div> -->
-					<div class="links">
-						<a href="reader.html?s=1&c=1&p=1">Читать с начала</a><br>
-						<a class="shower" id="show1" onclick="show(1)" href="javascript:void(0);">Показать список глав</a>
-						<a class="hider" id="hide1" onclick="hide(1)" href="javascript:void(0);">Спрятать список глав</a>
-						<div class="chapters" id="1">
-							<ul>
-								<li><a href="reader.html?s=1&c=7&p=1">Глава 7 - Дневной свет</a></li>
-								<li><a href="reader.html?s=1&c=6&p=1">Глава 6 - Жаркий день</a></li>
-								<li><a href="reader.html?s=1&c=5&p=1">Глава 5 - Круг кругом</a></li>
-								<li><a href="reader.html?s=1&c=4&p=1">Глава 4 - На туче</a></li>
-								<li><a href="reader.html?s=1&c=3&p=1">Глава 3 - Внизу и наверху</a></li>
-								<li><a href="reader.html?s=1&c=2&p=1">Глава 2 - Неприглашённые гости</a></li>
-								<li><a href="reader.html?s=1&c=1&p=1">Глава 1 - Неспокойное дерево</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+    <div class="main">
+        <div class="header">
+            <img src="img/header1.png">
+        </div>
+        <div class="menu">
+            <ul class="menu-links">
+                <li><a href="index.html">главная</a></li>
+                <li><a href="texts.html">текста</a></li>
+                <li><a href="comics.html">комиксы</a></li>
+                <li><a href="music.html">музыка</a></li>
+                <li><a href="about.html">обо мне</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <p>
+                Здесь список моих комиксов.<br>
+                Пока здесь только одна история, которая ещё рисуется, но потом будут ещё.<br>
+            </p>
+            <p>
+                О читалке:<br>
+                <!-- <strong>&lt;&lt;</strong> предыдущая глава<br> -->
+                <strong>&lt;</strong> предыдущая страница<br>
+                <strong>o</strong> вернуться сюда<br>
+                <strong>&gt;</strong> следующая страница<br>
+                <!-- <strong>&gt;&gt;</strong> следующая глава<br> -->
+            </p>
+            <p>
+                <a type="application/rss+xml" href="comicsfeed.xml"><img src="img/feed-icon-14x14.png"> RSS-фид комиксов</a>
+            </p>
+            <div class="comic-list">
+                <div class="item">
+                    <div class="cover">
+                        <img src="img/comics/1/cover.png">
+                    </div>
+                    <div class="info">
+                        <div class="title">Лес</div>
+                        <div class="desc">История о кусте, траве и шторме.</div>
+                        <div class="pubdate">Последнее обновление: 23.11.2020</div>
+                        <!-- <div class="status ongoing">В онгоинге</div> -->
+                        <div class="links">
+                            <a href="reader.html?s=1&c=1&p=1">Читать с начала</a><br>
+                            <a class="shower" id="show1" onclick="show(1)" href="javascript:void(0);">Показать список глав</a>
+                            <a class="hider" id="hide1" onclick="hide(1)" href="javascript:void(0);">Спрятать список глав</a>
+                            <div class="chapters" id="1">
+                                <ul>
+                                    <li><a href="reader.html?s=1&c=7&p=1">Глава 7 - Дневной свет</a></li>
+                                    <li><a href="reader.html?s=1&c=6&p=1">Глава 6 - Жаркий день</a></li>
+                                    <li><a href="reader.html?s=1&c=5&p=1">Глава 5 - Круг кругом</a></li>
+                                    <li><a href="reader.html?s=1&c=4&p=1">Глава 4 - На туче</a></li>
+                                    <li><a href="reader.html?s=1&c=3&p=1">Глава 3 - Внизу и наверху</a></li>
+                                    <li><a href="reader.html?s=1&c=2&p=1">Глава 2 - Неприглашённые гости</a></li>
+                                    <li><a href="reader.html?s=1&c=1&p=1">Глава 1 - Неспокойное дерево</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function show(c) {
+            document.getElementById(c).style.display = "block";
+            document.getElementById("show" + c).style.display = "none";
+            document.getElementById("hide" + c).style.display = "block";
+        }
+
+        function hide(c) {
+            document.getElementById(c).style.display = "none";
+            document.getElementById("show" + c).style.display = "block";
+            document.getElementById("hide" + c).style.display = "none";
+        }
+    </script>
 </body>
 </html>

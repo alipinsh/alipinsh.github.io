@@ -1,154 +1,172 @@
 body {
-	background-color: black;
-	color: white;
-	margin: 0;
-	font-family: Arial, sans-serif;
-	background-image: url("../img/stars.png");
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-image: url("../img/stars.png");
 }
 
 a:link, a:visited {
-  color: lime;
-  background-color: transparent;
-  text-decoration: none;
+    color: lime;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 a:hover, a:active {
-  color: lime;
-  background-color: transparent;
-  text-decoration: underline;
+    color: lime;
+    background-color: transparent;
+    text-decoration: underline;
 }
 
 h4 {
-	margin: 1em 0;
+    margin: 1em 0;
 }
 
 .main {
-	background-color: black;
-	width: 800px;
-	margin: 0 auto;
-	border-right: 1px solid white;
-	border-left: 1px solid white;
-	border-bottom: 1px solid white;
+    background-color: black;
+    width: calc(100% - 2px);
+    max-width: 798px;
+    margin: 0 auto;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 .header {
-	border-bottom: 1px solid white;
-	width: 800px;
-	height: 100px;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+.header img {
+    width: 100%;
 }
 
 .menu {
-	border-bottom: 1px solid white;
-	width: 800px;
-	display: table;
-	margin: 0 auto;
+    border-bottom: 1px solid white;
+    width: 100%;
 }
 
 .menu-links {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: table;
+    width: 100%;
 }
 
 .menu-links li {
-	display: inline;
-	text-align: center;
+    display: table-cell;
+    text-align: center;
+    width: 20%;
 }
 
 .menu-links a {
-	display: inline-block;
-	width: 150px;
+    display: inline-block;
+    width: 100%;
+    padding: 6px 0;
+}
+
+.menu-links a:hover {
+    background: radial-gradient(circle, green 0%, transparent 100%);
 }
 
 .content {
-	padding: 8px;
+    padding: 8px;
 }
 
 .comic-list {
-	
-	
+    
+    
 }
 
 .comic-list .item {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .item .cover {
-	float:left;
+    float: left;
+}
+
+.item .cover img {
+    width: 100%;
 }
 
 .item .info {
-	margin-left: 5px;
-	float:left;
+    margin-left: 5px;
+    float: left;
 }
 
 .info .title {
-	font-size: 20pt;
-	font-weight: bold;
-	padding-bottom: 6px;
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 6px;
 }
 
 .info .status {
-	font-size: 10pt;
+    font-size: 10px;
 }
 
 .ongoing {
-	color: yellow;
+    color: yellow;
 }
 
 .finished {
-	color: green;
+    color: green;
 }
 
 .info .desc {
-	padding-bottom: 6px;
+    padding-bottom: 6px;
 }
 
 .info .pubdate {
-	padding-bottom: 6px;
-	font-style: italic;
-	font-size: 10pt;
+    padding-bottom: 6px;
+    font-style: italic;
+    font-size: 12px;
 }
 
 .info .links {
-	
+    
 }
 
 .info .chapters {
-	display: none;
+    display: none;
 }
 
 .chapters ul {
-	margin: 8px 0;
+    margin: 8px 0;
 }
 
 .links .shower {
-	display: block;
+    display: block;
 }
 
 .links .hider {
-	display: none;
+    display: none;
 }
 
 .post {
-	
+    
 }
 
 .post .title {
-	font-size: 20pt;
-	font-weight: bold;
-	margin-bottom: 5px;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .post .date {
-	font-size: 10pt;
-	margin-bottom: 8px;
+    font-size: 12px;
+    margin-bottom: 8px;
 }
 
 .post .text {
-	
+    
 }
 
-
-
+@media (max-width: 800px) {
+    .menu-links li {
+        display: block;
+        width: 100%;
+    }
+}
