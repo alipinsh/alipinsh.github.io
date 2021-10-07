@@ -3,24 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/reader.css">
+    <script src="js/database.js"></script>
 	<script src="js/reader.js"></script>
 	<title>читалка</title>
 </head>
 <body>
 	<div class="mainbox">
 		<div class="top">
-			<div class="imageContainer">
+            <div class="image-container">
 				
 			</div>
 		</div>
-		<div class="bottom">
-			<div class="buttonsContainer">
-				<!-- <button id="prevChapter" onclick="turnChapter(-1)">&lt;&lt;</button> -->
-				<button id="prevPage" onclick="turnPage(-1)">&lt;</button>
-				<button id="home" onclick="window.location.href='comics.html'">o</button>
-				<button id="nextPage" onclick="turnPage(1)">&gt;</button>
-				<!-- <button id="nextChapter" onclick="turnChapter(1)">&gt;&gt;</button> -->
-			</div>
+        <div class="bottom">
+            <h1 class="title"></h1>
+            <h2 class="subtitle"></h2>
+            <a href="/comics.html">Назад на сайт</a>
+            <div class="help">
+                Нажми на правую часть страницы, чтобы листать вперёд. Нажми на левую часть страницы, чтобы листать назад. Также можно использовать клавиши стрелок вправо и влево.
+            </div>
 		</div>
 	</div>
 </body>
