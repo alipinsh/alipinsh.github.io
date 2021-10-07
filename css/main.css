@@ -42,6 +42,8 @@ h4 {
 .header img {
     width: 100%;
     vertical-align: bottom;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
 }
 
 .menu {
