@@ -2,8 +2,8 @@
 <rss version="2.0">
   <channel>
     <title>Комиксы eye128</title>
-    <link>https://alipinsh.github.io/eyesite/comics.html</link>
-    <description>Комиксы глазного</description>
+    <link>https://eye128.info/comics.html</link>
+    <description>Комиксы от eye128</description>
     <item>
        <title>Лес, глава 3 - Наверху и внизу</title>
        <link>https://eye128.info/reader.html?s=1&amp;c=3&amp;p=1</link>
@@ -16,13 +16,25 @@
        <title>Лес, глава 5 - Круг кругом</title>
        <link>https://eye128.info/eyesite/reader.html?s=1&amp;c=5&amp;p=1</link>
     </item>
-	<item>
+    <item>
        <title>Лес, глава 6 - Жаркий день</title>
        <link>https://eye128.info/eyesite/reader.html?s=1&amp;c=6&amp;p=1</link>
     </item>
-	<item>
+    <item>
        <title>Лес, глава 7 - Дневной свет</title>
        <link>https://eye128.info/eyesite/reader.html?s=1&amp;c=7&amp;p=1</link>
+    </item>
+    <item>
+       <title>Лес, глава 8 - Перекрёстные пути</title>
+       <link>https://eye128.info/eyesite/reader.html?s=1&amp;c=8&amp;p=1</link>
+    </item>
+    <item>
+       <title>Лес, глава 9 - Чудесный особняк</title>
+       <link>https://eye128.info/eyesite/reader.html?s=1&amp;c=9&amp;p=1</link>
+    </item>
+    <item>
+       <title>Лес, глава 10 - Важная битва</title>
+       <link>https://eye128.info/eyesite/reader.html?s=1&amp;c=10&amp;p=1</link>
     </item>
   </channel>
 </rss>

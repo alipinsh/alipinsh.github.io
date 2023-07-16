@@ -5,16 +5,20 @@ let page = 0;
 let imgContainer;
 let firstLoad = 5;
 
+function getImageName(c, p) {
+    return ('0' + c).slice(-2) + '_' + ('00' + p).slice(-3);
+}
+
 function changeContent(direction) {
     imgContainer.children[page-1-direction].style.display = 'none';
-    imgContainer.children[page-1].style.display = 'block';
+    imgContainer.children[page-1].style.display = 'inline';
 }
 
 function getCurrentParams() {
-    let params = new URLSearchParams(location.search);
-    comic = Number(params.get('s'));
-    chapter = Number(params.get('c'));
-    page = Number(params.get('p'));
+    let url = new URL(window.location.href);
+    comic = Number(url.searchParams.get('s'));
+    chapter = Number(url.searchParams.get('c'));
+    page = Number(url.searchParams.get('p'));
 }
 
 function loadPage(p) {
@@ -51,7 +55,7 @@ function firstLoadContent() {
     for (let i = 1; i <= pageCount; ++i) {
         let imgElement = document.createElement('img');
         imgElement.setAttribute('class', 'page-image');
-        imgElement.setAttribute('data-src', `img/comics/${comic}/${chapter}/${i}.png`);
+        imgElement.setAttribute('data-src', `img/comics/${comic}/${getImageName(chapter, i)}.png`);
         imgElement.style.display = 'none';
         imgContainer.appendChild(imgElement);
     }
@@ -62,7 +66,7 @@ function firstLoadContent() {
         }
     }
     
-    imgContainer.children[page-1].style.display = 'block';
+    imgContainer.children[page-1].style.display = 'inline';
 }
 
 function postLoadContent() {
@@ -142,6 +146,10 @@ function arrowKeyUp(e) {
     }
 }
 
+function fitModeOnChange(e) {
+    imgContainer.className = 'image-container ' + e.target.value;
+}
+
 window.addEventListener('load', function() {
     getCurrentParams();
     if (checkParams()) {
@@ -153,6 +161,12 @@ window.addEventListener('load', function() {
     document.querySelector('.top').addEventListener('click', topContainerOnClick);
     document.addEventListener('keydown', arrowKeyDown);
     document.addEventListener('keyup', arrowKeyUp);
+
+    let radios = document.querySelectorAll('.fit input');
+    for (let i = 0; i < radios.length; i++) {
+        radios.item(i).addEventListener('change', fitModeOnChange);
+    }
+    radios.item(0).click();
 });
 
 window.addEventListener('popstate', function (e) {

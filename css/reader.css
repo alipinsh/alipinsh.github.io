@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-	background-color: black;
+    background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -23,7 +23,7 @@ a:hover, a:active {
 }
 
 .mainbox {
-	
+    
 }
 
 .top {
@@ -31,22 +31,47 @@ a:hover, a:active {
 }
 
 .image-container {
-	height: 100vh;
+    text-align: center
 }
 
-.page-image {
+.image-container.all, .image-container.height {
+    height: 100vh
+}
+
+.all .page-image {
     width: 100%;
-	height: 100%;
+    height: 100%;
     object-fit: contain;
+}
+
+.width .page-image {
+    width: 100%;
+}
+
+.height .page-image {
+    height: 100%;
+}
+
+.none .page-image {
+    
 }
 
 .bottom {
     text-align: center;
 }
 
-.bottom .help {
-    margin: 8px auto 0 auto;
+.help, .fit {
+    margin: 8px auto;
     width: 100%;
     max-width: 800px;
     font-size: 12px;
+}
+
+.fit label {
+    cursor: pointer;
+}
+
+.fit input {
+    margin: 0 0 0 5px;
+    cursor: pointer;
 }

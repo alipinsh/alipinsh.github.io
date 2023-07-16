@@ -108,7 +108,9 @@ h4 {
 }
 
 .info .status {
-    font-size: 10px;
+    padding-bottom: 6px;
+    font-style: italic;
+    font-size: 12px;
 }
 
 .ongoing {
@@ -116,7 +118,7 @@ h4 {
 }
 
 .finished {
-    color: green;
+    color: limegreen;
 }
 
 .info .desc {
