@@ -31,11 +31,12 @@ a:hover, a:active {
 }
 
 .image-container {
-    text-align: center
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .image-container.all, .image-container.height {
-    height: 100vh
+    height: 100vh;
 }
 
 .all .page-image {
