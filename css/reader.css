@@ -28,11 +28,11 @@ a:hover, a:active {
 
 .top {
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .image-container {
     text-align: center;
-    -webkit-tap-highlight-color: transparent;
 }
 
 .image-container.all, .image-container.height {
