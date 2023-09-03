@@ -31,7 +31,7 @@ function loadPage(p) {
 
 function checkParams() {
     if (comics[comic-1] != undefined) {
-        let selectedChapter = comics[comic-1]['chapters'][chapter-1];
+        let selectedChapter = comics[comic-1]['chapters'][chapter];
         if (selectedChapter != undefined) {
             let pageCount = selectedChapter['pages'];
             if (pageCount != undefined) {
@@ -49,9 +49,9 @@ function firstLoadContent() {
     imgContainer = document.querySelector('.image-container');
     
     document.querySelector('.bottom h1').innerText = comics[comic-1]['title'];
-    document.querySelector('.bottom h2').innerText = comics[comic-1]['chapters'][chapter-1]['heading'];
+    document.querySelector('.bottom h2').innerText = comics[comic-1]['chapters'][chapter]['heading'];
     
-    let pageCount = comics[comic-1]['chapters'][chapter-1]['pages'];
+    let pageCount = comics[comic-1]['chapters'][chapter]['pages'];
     for (let i = 1; i <= pageCount; ++i) {
         let imgElement = document.createElement('img');
         imgElement.setAttribute('class', 'page-image');
@@ -71,7 +71,7 @@ function firstLoadContent() {
 
 function postLoadContent() {
     let pageToLoad = page + firstLoad - 1;
-    if (pageToLoad <= comics[comic-1]['chapters'][chapter-1]['pages']) {
+    if (pageToLoad <= comics[comic-1]['chapters'][chapter]['pages']) {
         loadPage(pageToLoad);
     }
 }
@@ -79,11 +79,11 @@ function postLoadContent() {
 function turnChapter(direction) {
     chapter += direction;
     
-    if (chapter > 0 && chapter <= comics[comic-1]['chapters'].length) {
+    if (chapter >= 0 && chapter < comics[comic-1]['chapters'].length && comics[comic-1]['chapters'][chapter] != undefined) {
         if (direction > 0) {
             page = 1;
         } else {
-            page = comics[comic-1]['chapters'][chapter-1]['pages'];
+            page = comics[comic-1]['chapters'][chapter]['pages'];
         }
         history.pushState('', `Comic ${comic}, Chapter ${chapter}, Page ${page}`, `reader.html?s=${comic}&c=${chapter}&p=${page}`);
         window.scroll(0, 0);
@@ -101,7 +101,7 @@ function turnPage(direction) {
     
     if (page <= 0) {
         turnChapter(-1);
-    } else if (page > comics[comic-1]['chapters'][chapter-1]['pages']){
+    } else if (page > comics[comic-1]['chapters'][chapter]['pages']){
         turnChapter(1);
     } else {
         history.pushState('', `Comic ${comic}, Chapter ${chapter}, Page ${page}`, `reader.html?s=${comic}&c=${chapter}&p=${page}`);

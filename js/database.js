@@ -2,6 +2,7 @@ let comics = [
     {
         title: "Лес",
         chapters: [
+            undefined, // no oneshot
             { heading: "Глава 1 - Неспокойное дерево", pages: 34 },
             { heading: "Глава 2 - Неприглашённые гости", pages: 32 },
             { heading: "Глава 3 - Внизу и наверху", pages: 32 },
@@ -12,6 +13,12 @@ let comics = [
             { heading: "Глава 8 - Перекрёстные пути", pages: 32 },
             { heading: "Глава 9 - Чудесный особняк", pages: 32 },
             { heading: "Глава 10 - Важная битва", pages: 32 }
+        ]
+    },
+    {
+        title: "Посылка",
+        chapters: [
+            { heading: "", pages: 14}        
         ]
     }
 ];
