@@ -10,8 +10,8 @@ function getImageName(c, p) {
 }
 
 function changeContent(direction) {
-    imgContainer.children[page-1-direction].style.display = 'none';
     imgContainer.children[page-1].style.display = 'inline';
+    imgContainer.children[page-1-direction].style.display = 'none';
 }
 
 function getCurrentParams() {
@@ -98,7 +98,7 @@ function turnChapter(direction) {
 
 function turnPage(direction) {
     page += direction;
-    
+
     if (page <= 0) {
         turnChapter(-1);
     } else if (page > comics[comic-1]['chapters'][chapter]['pages']){
@@ -114,7 +114,6 @@ function turnPage(direction) {
             changeContent(direction);
         }
     }
-    
 }
 
 function topContainerOnClick(e) {
@@ -148,6 +147,7 @@ function arrowKeyUp(e) {
 
 function fitModeOnChange(e) {
     imgContainer.className = 'image-container ' + e.target.value;
+    localStorage.setItem('fit', e.target.getVariable('data-index'));
 }
 
 window.addEventListener('load', function() {
@@ -157,7 +157,7 @@ window.addEventListener('load', function() {
     } else {
         window.open('comics.html', '_self');
     }
-    
+
     document.querySelector('.top').addEventListener('click', topContainerOnClick);
     document.addEventListener('keydown', arrowKeyDown);
     document.addEventListener('keyup', arrowKeyUp);
@@ -166,7 +166,16 @@ window.addEventListener('load', function() {
     for (let i = 0; i < radios.length; i++) {
         radios.item(i).addEventListener('change', fitModeOnChange);
     }
-    radios.item(0).click();
+
+    let savedChoice = localStorage.getItem('fit');
+
+    if (savedChoice == null) {
+        savedChoice = 0;
+        localStorage.setItem('fit', 0);
+    }
+
+    radios.item(savedChoice).checked = true;
+    imgContainer.className = 'image-container ' + radios.item(savedChoice).value;
 });
 
 window.addEventListener('popstate', function (e) {
