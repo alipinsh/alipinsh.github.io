@@ -26,5 +26,11 @@ let comics = [
         chapters: [
             { heading: "", pages: 16}
         ]
+    },
+    {
+        title: "Телескоп",
+        chapters: [
+            { heading: "", pages: 16}
+        ]
     }
 ];
