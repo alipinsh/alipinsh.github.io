@@ -16,33 +16,34 @@ let comics = [
         ]
     },
     {
-        title: "Посылка",
+        title: "Курьерская служба",
         chapters: [
-            { heading: "", pages: 14}
+            { heading: "Глава 0 - Посылка", pages: 14 },
+            { heading: "Глава 1 - Опасная доставка", pages: 16 }
         ]
     },
     {
         title: "Сокровище",
         chapters: [
-            { heading: "", pages: 16}
+            { heading: "", pages: 16 }
         ]
     },
     {
         title: "Телескоп",
         chapters: [
-            { heading: "", pages: 16}
+            { heading: "", pages: 16 }
         ]
     },
     {
         title: "Награда",
         chapters: [
-            { heading: "", pages: 14}
+            { heading: "", pages: 14 }
         ]
     },
     {
         title: "Тарелка",
         chapters: [
-            { heading: "", pages: 14}
+            { heading: "", pages: 14 }
         ]
     }
 ];

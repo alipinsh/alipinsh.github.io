@@ -24,9 +24,6 @@
                 Здесь список моих комиксов: и сериалы, и одиночные истории.
             </p>
             <p>
-                <a href="voting.html">Голосование</a>
-            </p>
-            <p>
                 О читалке:<br>
                 Нажми на правую часть страницы, чтобы листать вперёд. Нажми на левую часть страницы, чтобы листать назад. Можно использовать клавиши стрелок вправо и влево. Также внизу можно поменять размер картинки, выбрав по чему подогнать: по всему, по ширине картинки, по высоте картинки, никак.
             </p>
@@ -34,6 +31,25 @@
                 <a type="application/rss+xml" href="comicsfeed.xml"><img src="img/feed-icon-14x14.png"> RSS-фид комиксов</a>
             </p>
             <div class="comic-list">
+                <div class="item">
+                    <div class="cover">
+                        <img src="img/comics/2/cover.png">
+                    </div>
+                    <div class="info">
+                        <div class="title">Курьерская служба</div>
+                        <div class="desc">Обыкновенный курьер, который доставит любую посылку.</div>
+                        <div class="pubdate">Последнее обновление: 13.05.2024</div>
+                        <div class="status"><span class="ongoing">Рисуется.</span> Нынешняя длина: 30 страниц.</div>
+                        <div class="link"><a href="reader.html?s=2&c=0&p=1">Читать с начала</a></div>
+                        <details class="chapters">
+                            <summary>Список глав</summary>
+                            <ul>
+                                <li><a href="reader.html?s=2&c=0&p=1">Глава 0 - Посылка</a></li>
+                                <li><a href="reader.html?s=2&c=1&p=1">Глава 1 - Опасная доставка</a></li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
                 <div class="item">
                     <div class="cover">
                         <img src="img/comics/6/cover.png">
@@ -96,21 +112,6 @@
                 </div>
                 <div class="item">
                     <div class="cover">
-                        <img src="img/comics/2/cover.png">
-                    </div>
-                    <div class="info">
-                        <div class="title">Посылка</div>
-                        <div class="desc">Обыкновенный курьер отправляется в путь доставить важную посылку.</div>
-                        <div class="pubdate">Выложено: 03.09.2023</div>
-                        <div class="status"><span class="finished">Закончено?</span> Длина: 14 страниц.</div>
-                        <div class="links">
-                            <a href="reader.html?s=2&c=0&p=1">Читать</a><br>
-                            <a href="img/comics/2/posilka.zip">Скачать</a><br>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="cover">
                         <img src="img/comics/1/cover.png">
                     </div>
                     <div class="info">
@@ -118,43 +119,27 @@
                         <div class="desc">История о кусте, траве и шторме.</div>
                         <div class="pubdate">Последнее обновление, после долгого хиатуса: 16.07.2023</div>
                         <div class="status"><span class="finished">Закончено.</span> Длина: 322 страницы.</div>
-                        <div class="links">
-                            <a href="reader.html?s=1&c=1&p=1">Читать с начала</a><br>
-                            <a class="shower" id="show1" onclick="show(1)" href="javascript:void(0);">Показать список глав</a>
-                            <a class="hider" id="hide1" onclick="hide(1)" href="javascript:void(0);">Спрятать список глав</a>
-                            <a href="img/comics/1/les.zip">Скачать все главы</a><br>
-                            <div class="chapters" id="1">
-                                <ul>
-                                    <li><a href="reader.html?s=1&c=1&p=1">Глава 1 - Неспокойное дерево</a></li>
-                                    <li><a href="reader.html?s=1&c=2&p=1">Глава 2 - Неприглашённые гости</a></li>
-                                    <li><a href="reader.html?s=1&c=3&p=1">Глава 3 - Внизу и наверху</a></li>
-                                    <li><a href="reader.html?s=1&c=4&p=1">Глава 4 - На туче</a></li>
-                                    <li><a href="reader.html?s=1&c=5&p=1">Глава 5 - Круг кругом</a></li>
-                                    <li><a href="reader.html?s=1&c=6&p=1">Глава 6 - Жаркий день</a></li>
-                                    <li><a href="reader.html?s=1&c=7&p=1">Глава 7 - Дневной свет</a></li>
-                                    <li><a href="reader.html?s=1&c=8&p=1">Глава 8 - Перекрёстные пути</a></li>
-                                    <li><a href="reader.html?s=1&c=9&p=1">Глава 9 - Чудесный особняк</a></li>
-                                    <li><a href="reader.html?s=1&c=10&p=1">Глава 10 - Важная битва</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                        <div class="link"><a href="reader.html?s=1&c=1&p=1">Читать с начала</a></div>
+                        <div class="link"><a href="img/comics/1/les.zip">Скачать все главы</a></div>
+                        <details class="chapters">
+                            <summary>Список глав</summary>
+                            <ul>
+                                <li><a href="reader.html?s=1&c=1&p=1">Глава 1 - Неспокойное дерево</a></li>
+                                <li><a href="reader.html?s=1&c=2&p=1">Глава 2 - Неприглашённые гости</a></li>
+                                <li><a href="reader.html?s=1&c=3&p=1">Глава 3 - Внизу и наверху</a></li>
+                                <li><a href="reader.html?s=1&c=4&p=1">Глава 4 - На туче</a></li>
+                                <li><a href="reader.html?s=1&c=5&p=1">Глава 5 - Круг кругом</a></li>
+                                <li><a href="reader.html?s=1&c=6&p=1">Глава 6 - Жаркий день</a></li>
+                                <li><a href="reader.html?s=1&c=7&p=1">Глава 7 - Дневной свет</a></li>
+                                <li><a href="reader.html?s=1&c=8&p=1">Глава 8 - Перекрёстные пути</a></li>
+                                <li><a href="reader.html?s=1&c=9&p=1">Глава 9 - Чудесный особняк</a></li>
+                                <li><a href="reader.html?s=1&c=10&p=1">Глава 10 - Важная битва</a></li>
+                            </ul>
+                        </details>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script>
-        function show(c) {
-            document.getElementById(c).style.display = "block";
-            document.getElementById("show" + c).style.display = "none";
-            document.getElementById("hide" + c).style.display = "block";
-        }
-
-        function hide(c) {
-            document.getElementById(c).style.display = "none";
-            document.getElementById("show" + c).style.display = "block";
-            document.getElementById("hide" + c).style.display = "none";
-        }
-    </script>
 </body>
 </html>

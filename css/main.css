@@ -133,12 +133,18 @@ h4 {
     font-size: 12px;
 }
 
-.info .links {
-    
+.info .link {
+    padding-bottom: 5px;
 }
 
 .info .chapters {
-    display: none;
+
+}
+
+.info .chapters summary {
+    color: lime;
+    cursor: pointer;
+    user-select: none;
 }
 
 .chapters ul {
