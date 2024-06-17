@@ -20,7 +20,8 @@ let comics = [
         chapters: [
             { heading: "Глава 0 - Посылка", pages: 14 },
             { heading: "Глава 1 - Опасная доставка", pages: 16 },
-            { heading: "Глава 2 - Прибытие под дождём", pages: 16 }
+            { heading: "Глава 2 - Прибытие под дождём", pages: 16 },
+            { heading: "Глава 3 - Через забор", pages: 14 }
         ]
     },
     {
